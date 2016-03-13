@@ -1,7 +1,5 @@
 package by.gstu.interviewstreet.domain;
 
-import javafx.geometry.Pos;
-
 import javax.persistence.*;
 import java.io.Serializable;
 
