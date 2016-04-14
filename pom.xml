@@ -88,12 +88,6 @@
     </dependency>
 
     <dependency>
-      <groupId>javax.persistence</groupId>
-      <artifactId>persistence-api</artifactId>
-      <version>1.0</version>
-    </dependency>
-
-    <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
@@ -109,7 +103,7 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
-      <version>4.2.0.Final</version>
+      <version>5.1.0.Final</version>
     </dependency>
     <dependency>
       <groupId>org.hibernate</groupId>
@@ -177,7 +171,7 @@
 
   </dependencies>
   <build>
-    <finalName>Interview Street</finalName>
+    <finalName>interview</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

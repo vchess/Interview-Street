@@ -5,10 +5,10 @@
     <input type="hidden" name="type" value="${interview.type.id}"/>
 
     <div class="row valign-wrapper">
-        <div class="col l9 left-align">
+        <div class="col l9 m9 left-align">
             <h4 id="title">Редактирование анкеты</h4>
         </div>
-        <div class="col l3">
+        <div class="col l3 m3">
             <i class="interview-icon medium material-icons teal-text right">${interview.type.visibilityIcon}</i>
         </div>
     </div>
@@ -87,7 +87,7 @@
     <div class="row valign-wrapper">
         <div class="col s1 left-align hide-on-small-only">
             <a id="go-back" href="<c:url value="/editor/interview-list"/>"><i
-                    class="medium material-icons deep-orange-text text-lighten-2" title="Назад">reply</i></a>
+                    class="medium material-icons brown-text text-lighten-2" title="Назад">reply</i></a>
         </div>
         <div class="col s11 right-align">
             <a href="<c:url value="/editor/interview-list"/>" class="waves-effect waves-light btn-large red accent-2">Отмена</a>

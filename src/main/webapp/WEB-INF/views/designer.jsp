@@ -5,7 +5,7 @@
 <html>
 <head>
     <%@include file="fragments/meta.html" %>
-    <%@include file="fragments/general-css.html" %>
+    <%@include file="fragments/general-css.jsp" %>
     <link href="<c:url value="/resources/css/designer.css"/>" rel="stylesheet" type="text/css">
     <title>Interview Street - Редактор анкет</title>
 </head>
@@ -34,10 +34,9 @@
             <!--Interview initial text-->
             <div class="row narrow-row">
                 <div class="input-field col l12 m12 s12">
-                    <input
-                            value="Здравствуйте, потратьте, пожалуйста, несколько минут своего времени на заполнение следующей анкеты."
-                            id="initial-text" type="text" length="200"/>
-                    <label class="active" for="initial-text">Вводный текст анкеты</label>
+                    <textarea id="init-tbox" class="materialize-textarea"></textarea>
+                    <input id="initial-text" type="hidden" value="${interview.introductoryText}">
+                    <label class="active" for="init-tbox">Вводный текст анкеты</label>
                 </div>
             </div>
         </div>
@@ -174,6 +173,7 @@
         <label>
             <input type="text" class="interview-url" value="/test/url/place/here2d"/>
         </label>
+    </div>
 </main>
 
 <%@include file="fragments/footer.jsp" %>
@@ -185,11 +185,11 @@
 <%@include file="fragments/templates/question-template.jsp" %>
 <%@include file="fragments/templates/stag-list-template.jsp" %>
 
-<%@include file="fragments/general-js.html" %>
+<%@include file="fragments/general-js.jsp" %>
 <script src="<c:url value="/resources/vendors/clipboard/clipboard.js"/>"></script>
 <script src="<c:url value="/resources/vendors/js-render/jsrender.js"/>"></script>
 <script src="<c:url value="/resources/js/jsrender.extends.js"/>"></script>
-<script src="/resources/js/designer.js"></script>
+<script src="<c:url value="/resources/js/designer.js"/>"></script>
 
 </body>
 </html>
